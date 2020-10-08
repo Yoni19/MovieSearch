@@ -33,10 +33,6 @@ function showList(selector, poster, name, year, imdbID) {
 	`;
 };
 
-    
-
-
-
 
 
 const movieList = (selector,transformUrl) => {
@@ -56,7 +52,7 @@ const movieList = (selector,transformUrl) => {
     })
     })
     .then(() => addIntersectionObserver())
-		.catch((error) => console.error('Houston, we have a problem :', error))
+		.catch((error) => console.error('problem :', error))
   };
 
 
@@ -98,8 +94,6 @@ const movieList = (selector,transformUrl) => {
       };
     };
   };
-
-  
 
   const addIntersectionObserver = () => {
     let observer = new IntersectionObserver(function (observables) {
